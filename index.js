@@ -15,6 +15,10 @@ app.get('/', (req, res)=>{
     })
 })
 
+app.get('/contato', (req,res)=>{
+    res.send('ola')
+})
+
 app.get('/calcular',(req,res)=>{
     n1 = Number(req.body.numero1)
     n2 = Number(req.body.numero2)
